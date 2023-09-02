@@ -41,7 +41,6 @@ header {
     font-weight: bold;
 }
 
-
 .nav-link {
     transition: all 0.2s;
     position: relative;
@@ -158,3 +157,47 @@ header {
     }
   }
   
+
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #1B2839;
+}
+
+.social-icons-container, .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #5C7E10;
+}
+
+.social-icon:hover {
+  background-color: #5C7E10;
+}
+
+.footer-menu-container {
+  list-style-type: none;
+  color: white;
+  font-size: 18px;
+}
+
+.menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-8%);
+}
+
