@@ -1,5 +1,36 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #171A21;
+}
+h1{
+    color: #fff;
+    padding: 10px;
+}
+.tabla{
+    padding: 20px;
+}
+.tabla-desktop{
+    width: 100%;
+    border-collapse: collapse;
+    /* margin: 20px 20px 20px 20px; */
+    
+}
+
+.tabla-desktop tr th{
+    background-color: #171A21 ;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    text-align: left;
+}
+
+.tabla-desktop tr td{
+    border: 1px solid #fff; 
+    padding: 5px;
+    background-color: #1B2839;
+    color: #fff;
 }
