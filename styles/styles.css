@@ -1,59 +1,61 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+  box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#1B2839;
-    width: 100%;
-    height: 100px;
-    padding-bottom: 10px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 3000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#1B2839;
+  width: 100%;
+  height: 100px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 3000;
+  box-shadow: 0px 2px 20px #1B2839;
 }
 
 .textNav {
-    position: absolute;
-    right: 0px;
-    top: 6px;
-    height: 21px;
-    line-height: 21px;
-    color: white;
-    font-size: 14px;
-    z-index: 401;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  height: 21px;
+  line-height: 21px;
+  color: white;
+  font-size: 14px;
+  z-index: 401;
 }
 
 .installBtn {
-    display: inline-block;
-    position: relative;
-    height: 21px;
-    line-height: 24px;
-    margin-right: 500px;
-    background-color: #5C7E10;
-    border: #5C7E10;
-    color: white;
-    font-weight: bold;
+  display: inline-block;
+  position: relative;
+  height: 21px;
+  line-height: 24px;
+  margin-right: 500px;
+  background-color: #5C7E10;
+  border: #5C7E10;
+  color: white;
+  font-weight: bold;
 }
 
 .nav-link {
-    transition: all 0.2s;
-    position: relative;
+  transition: all 0.2s;
+  position: relative;
 }
 
 .nav-link:hover::after {
-    content: "";
-    height: 2px;
-    width: 100%;
-    background-color: #5C7E10;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #5C7E10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 
@@ -179,10 +181,27 @@ footer {
   width: 50px;
   border-radius: 50px;
   border: 1px solid #5C7E10;
+  background-image: url(/img/youtube-logo-24\ \(1\).png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
 }
 
 .social-icon:hover {
   background-color: #5C7E10;
+}
+
+.social-icon:nth-of-type(2) {
+  background-image: url(/img/instagram-alt-logo-24.png);
+}
+
+.social-icon:nth-of-type(3) {
+  background-image: url(/img/facebook-circle-logo-24.png);
+}
+
+.social-icon:nth-of-type(4) {
+  background-image: url(/img/twitter-logo-24.png);
 }
 
 .footer-menu-container {
