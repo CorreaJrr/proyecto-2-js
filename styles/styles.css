@@ -9,5 +9,6 @@ main {
 }
 
 .divBuy {
-  border: #5C7E10;
+  border-radius: 10px;
+  border: 1px solid #5C7E10;
 }
