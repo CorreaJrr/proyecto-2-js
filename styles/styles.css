@@ -1,5 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Mulish', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+main {
+  background-color: #29455C;
+}
+
+.divBuy {
+  border: #5C7E10;
 }
