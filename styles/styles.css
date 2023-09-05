@@ -5,10 +5,26 @@
 }
 
 main {
-  background-color: #29455C;
+  background-color: #1B2838;
 }
 
 .divBuy {
   border-radius: 10px;
   border: 1px solid #5C7E10;
+  transition: 0.5s;
+}
+
+.divBuy:hover {
+  background-color: #5C7E10;
+}
+
+h6 {
+  letter-spacing: 2px;
+  background: #5C7E10;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+span {
+  color: #61686D;
 }
