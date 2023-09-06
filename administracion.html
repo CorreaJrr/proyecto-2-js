@@ -26,7 +26,7 @@
           <h1 class="d-flex justify-content-center">Administrar productos</h1>
 
             <!-- Button trigger modal -->
-          <button type="button" class="btn-agregar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <button type="button" class="btn-agregar btn-group fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Nuevo +
           </button>
 
@@ -38,18 +38,19 @@
           <h5 class="modal-title" id="staticBackdropLabel">Agrega un juego nuevo</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body d-inline-grid align-content-center">
+            <img src="./img/logo paginaRolling.png" alt="logo de pagina" class="logo-pagina align-content-center">
             <p class="m-1">Codigo</p>
-            <input type="number">
+            <input type="number" required>
             <p class="m-1">Nombre</p>
-            <input type="text">
+            <input type="text" required>
             <p class="m-1">Categoria</p>
-            <input type="text">
+            <input type="text" required>
             <p class="m-1">Descripcion</p>
-            <input type="text">
+            <textarea name="" id="" cols="30" rows="5" required></textarea>
           </div>
           <div class="modal-footer">
-          <button type="button" class="btn btn-agregar"       data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-dark"       data-bs-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-dark">Agregar</button>
           </div>
           </div>

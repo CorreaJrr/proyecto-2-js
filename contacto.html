@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="proyecto Rolling-Games">
+    <meta name="keywords" content="Html, css , JavaScript, accion, Juegos">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Rolling-Games</title>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+        <div class="d-flex justify-content-center mt-3 p-4">
+            <h1 class="texto-claro">Formulario de consultas</h1>
+        </div>
+        <!-- form -->
+        <form class="container">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label texto-claro">Mail de contacto</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text texto-claro">No compartiremos tu email con nadie.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label texto-claro">telefono de contacto</label>
+              <input type="tel" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label texto-claro">Consulta</label>
+                <textarea name="" id="texto" cols="30" rows="5" required></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary texto-claro">Enviar</button>
+          </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./app/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

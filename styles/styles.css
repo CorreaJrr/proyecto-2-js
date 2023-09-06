@@ -6,6 +6,9 @@
 body{
     background-color: #171A21;
 }
+.texto-claro{
+    color: #fff;
+}
 h1{
     color: #fff;
     padding: 10px;
@@ -48,4 +51,13 @@ h1{
 }
 .modal-title, .modal-body{
     color: #fff;
+}
+
+.logo-pagina{
+    width: 40%;
+    margin-left: 6rem;
+}
+
+#texto{
+    width: 100%;
 }
