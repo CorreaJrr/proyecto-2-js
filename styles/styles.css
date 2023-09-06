@@ -11,3 +11,31 @@ main {
 .sobreNos {
   background-color: #5C7E10;
 }
+
+.integrantesMenu {
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.integrantes {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.integrantes:hover {
+  color: #5C7E10;
+  scale: 1.2;
+}
+
+h2 {
+  letter-spacing: 3px;
+  border-bottom: 1px solid #5C7E10;
+}
+
+.slogan {
+  letter-spacing: 2.5px;
+}
