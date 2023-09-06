@@ -31,6 +31,10 @@ main {
   scale: 1.2;
 }
 
+.integrants {
+  font-size: 25px;
+}
+
 h2 {
   letter-spacing: 3px;
   border-bottom: 1px solid #5C7E10;
@@ -38,4 +42,40 @@ h2 {
 
 .slogan {
   letter-spacing: 2.5px;
+}
+
+.lenguageIcon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-image: url(/img/html5-logo-36.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  transition: 0.5s;
+}
+
+.lenguageIcon:hover {
+  background-color: #5C7E10;
+}
+
+.lenguageIcon:nth-of-type(2) {
+  background-image: url(/img/css3-logo-36.png);
+}
+
+.lenguageIcon:nth-of-type(3) {
+  background-image: url(/img/javascript-logo-36.png);
+}
+
+.lenguageIcon:nth-of-type(4) {
+  background-image: url(/img/bootstrap-logo-36.png);
+}
+
+.lenguageIcon:nth-of-type(5) {
+  background-image: url(/img/git-logo-36.png);
+}
+
+.lenguageIcon:nth-of-type(6) {
+  background-image: url(/img/github-logo-36.png);
 }
