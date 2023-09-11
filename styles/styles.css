@@ -9,3 +9,25 @@
   width: 100%;
   height: 650px;
 }
+
+.saveSound {
+  transition: .5s;
+  box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.6);
+}
+
+.saveSound:hover {
+  box-shadow: 0px 0px 12px 5px rgba(92,126,16,0.6);
+}
+
+.imgsOfertas{
+  transition: .5s;
+}
+
+.imgsOfertas:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.6);
+}
+
+.imgsRv {
+  box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.6);
+}
