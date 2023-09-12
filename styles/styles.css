@@ -13,7 +13,7 @@ h1 {
 }
 
 .divBuy {
-  width: 50%;
+
   border-radius: 10px;
   border: 1px solid #5C7E10;
   transition: 0.5s;
@@ -21,6 +21,7 @@ h1 {
 }
 
 .divBuy:hover {
+  transform: scale(1.1);
   background-color: #5C7E10;
 }
 
@@ -37,5 +38,18 @@ span {
 
 .cardInfo {
   background-color: #1B2838;
-  box-shadow: -1px 1px 11px 4px rgba(255,255,255,0.79);
+}
+
+@media (max-width: 768px) {
+  iframe {
+    display: none;
+  }
+
+  .carrousell {
+    display: none;
+  }
+
+  .imgCs {
+    width: 350px;
+  }
 }
