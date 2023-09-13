@@ -1,0 +1,16 @@
+{
+  "juegos": [
+    {
+      "nombre": "juan",
+      "categoria": "editado",
+      "descripcion": "sdfsdfsadf",
+      "id": 4
+    },
+    {
+      "nombre": "Emmanuel",
+      "categoria": "shooter",
+      "descripcion": "descripcion breve",
+      "id": 5
+    }
+  ]
+}

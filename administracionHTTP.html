@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<main>
+    
+    <div class="container">
+        <h1 class="d-flex justify-content-center">Administrar productos</h1>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn-agregar btn-group fw-bold" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop" onclick="">
+            Nuevo +
+        </button>
+
+        <!-- Modal Nuevo+ -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-black">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Agrega un juego nuevo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-inline-grid align-content-center">
+                        <img src="./img/logo paginaRolling.png" alt="logo de pagina"
+                            class="logo-pagina align-content-center">
+
+                        <form action="" id="formulario">
+                            <!-- <div class="mb-3">
+                                <p class="m-1">Codigo</p>
+                                <input type="number" class="form-control" id="codigo" name="codigo">
+                            </div> -->
+
+
+                            <div class="mb-3">
+                                <p class="m-1">Nombre</p>
+                                <input type="input" class="form-control" id="nombre" name="nombre">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <p class="m-1">Categoria</p>
+                                <input type="text" class="form-control" id="categoria" name="categoria">
+                            </div>
+
+                            <div class="mb-3">
+                                <p class="m-1">Descripcion</p>
+                                <textarea id="Descripcion" cols="30" rows="5" class="form-control col-12"
+                                    name="descripcion">Descripcion breve</textarea>
+                                <!-- <input type="text" class="form-control" id="Descripcion" name="descripcion"> -->
+                            </div>
+
+                            <div class="mb-3 d-flex justify-content-around">
+                                <button type="submit" class="btn btn-dark col-6" id="btn" onclick="">Agregar</button>
+                                <button type="button" class="btn btn-dark col-6" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Button trigger modaledit -->
+    <button type="button" class="btn-agregar btn-group fw-bold" data-bs-toggle="modal" data-bs-target="#modaledit"
+        onclick="">
+        editar
+    </button>
+
+
+    <div class="modal fade" id="modaledit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-black">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Campos a editar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-inline-grid align-content-center">
+                    <img src="./img/logo paginaRolling.png" alt="logo de pagina"
+                        class="logo-pagina align-content-center">
+
+                    <form action="" id="formEdit">
+
+                        <div class="mb-3">
+                            <p class="m-1">id</p>
+                            <input type="input" class="form-control" id="idEdit" name="idEdit"
+                                placeholder="ingresa el ID del objeto a editar" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <p class="m-1">Nombre</p>
+                            <input type="input" class="form-control" id="nombreEdit" name="nombreEdit" required>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <p class="m-1">Categoria</p>
+                            <input type="text" class="form-control" id="categoriaEdit" name="categoriaEdit">
+                        </div>
+
+                        <div class="mb-3">
+                            <p class="m-1">Descripcion</p>
+                            <textarea id="DescripcionEdit" cols="30" rows="5" class="form-control col-12"
+                                name="descripcionEdit"></textarea>
+                            <!-- <input type="text" class="form-control" id="Descripcion" name="descripcion"> -->
+                        </div>
+
+                        <div class="mb-3 d-flex justify-content-around">
+                            <button type="submit" class="btn btn-dark col-6" id="btn-edit"
+                                for="form-edit">Editar</button>
+                            <button type="button" class="btn btn-dark col-6" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tabla table-responsive-sm" id="table-row">
+        <table class="tabla-desktop" id="tabla-desktop">
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Categoria</th>
+                    <th>Descripcion</th>
+                    <th>Publicado</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody id="contenido">
+                <tr>
+
+                </tr>
+            </tbody>
+</main>
+
+<body>
+    <div>
+        <!-- <button class="btn btn-dark" onclick="createGames()">crear usuario</button> -->
+    </div>
+</body>
+<script type="" src="./app.js/requestHTTP.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>
