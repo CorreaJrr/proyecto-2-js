@@ -1,5 +1,4 @@
 const obtenerJuegos = async (id) => {
-    window.location.href = "PáginaDetalleJuego1.html"
     const response = await fetch(`http://localhost:3000/juegos/${id}`);
     const data = await response.json();
 
@@ -71,11 +70,12 @@ const obtenerJuegos = async (id) => {
         <p>${data.acercaJuego}</p>
       </div>`
     printMain.appendChild(printP)
+    // window.location.href = "PáginaDetalleJuego1.html";
     alert("hola")
 }
 
 const imageFun = document.querySelectorAll(".imgFuncion");
 console.log(imageFun);
 imageFun.forEach(d => {
-  d.addEventListener('click' , obtenerJuegos(3))
+  d.addEventListener('click' , obtenerJuegos)
 });
