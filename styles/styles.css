@@ -226,6 +226,51 @@ footer {
   transform: translateY(-30%);
 }
 
+.tittleDetail {
+  border-bottom: 1px solid #5C7E10;
+}
+
+.divBuy {
+
+  border-radius: 10px;
+  border: 1px solid #5C7E10;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.divBuy:hover {
+  transform: scale(1.1);
+  background-color: #5C7E10;
+}
+
+h6 {
+  letter-spacing: 2px;
+  background: #5C7E10;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+span {
+  color: #61686D;
+}
+
+.cardInfo {
+  background-color: #1B2838;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    display: none;
+  }
+
+  .carrousell {
+    display: none;
+  }
+
+  .imgCs {
+    width: 350px;
+  }
+}
 
 /* main */
 
