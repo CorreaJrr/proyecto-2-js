@@ -1,7 +1,6 @@
-const obtenerJuegos = async (id) => {
+async function obtenerJuegos(id) {
     const response = await fetch(`http://localhost:3000/juegos/${id}`);
     const data = await response.json();
-
     const printMain = document.getElementById("mainJuegos");
     printMain.innerHTML = ""
     printMain.classList = "container-fluid"
@@ -77,5 +76,5 @@ const obtenerJuegos = async (id) => {
 const imageFun = document.querySelectorAll(".imgFuncion");
 console.log(imageFun);
 imageFun.forEach(d => {
-  d.addEventListener('click' , obtenerJuegos)
+  d.addEventListener('click' , obtenerJuegos())
 });

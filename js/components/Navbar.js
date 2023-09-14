@@ -1,6 +1,8 @@
 const header = document.querySelector('header');
 
 const navBar = () => {
+    const user = JSON.parse(localStorage.getItem('userLog'));
+
     return (header.innerHTML = `<div class="logo p-5">
     <a href="index.html"><img class="roll-in-blurred-top mt-2" src="./img/Logo img.png" alt="Logo RollingGames" width="150px" height="100px"></a>
   </div>
