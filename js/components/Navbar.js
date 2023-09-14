@@ -20,7 +20,7 @@ const navBar = () => {
             <a class="nav-link active" aria-current="page" href="#"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navButton text-light fw-bold" href="#">HOME</a>
+            <a class="nav-link navButton text-light fw-bold" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link navButton text-light fw-bold" href="#">TIENDA</a>
