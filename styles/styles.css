@@ -13,7 +13,11 @@ h1 {
 }
 
 .divBuy {
+<<<<<<< HEAD
 
+=======
+  max-width: 400px;
+>>>>>>> parent of 1bc2ef2 (pagdetalle casi terminada)
   border-radius: 10px;
   border: 1px solid #5C7E10;
   transition: 0.5s;
