@@ -2,7 +2,7 @@ const header = document.querySelector('header');
 
 const navBar = () => {
     const user = JSON.parse(localStorage.getItem('userLog'));
-
+    const ADMIN_ROLE = 'ADMIN';
     return (header.innerHTML = `<div class="logo p-5">
     <a href="index.html"><img class="roll-in-blurred-top mt-2" src="./img/Logo img.png" alt="Logo RollingGames" width="150px" height="100px"></a>
   </div>
@@ -25,12 +25,37 @@ const navBar = () => {
           <li class="nav-item">
             <a class="nav-link navButton text-light fw-bold" href="#">TIENDA</a>
           </li>
-          <li class="nav-item">
+          ${
+            user ? '' :
+            `<li class="nav-item">
             <a class="nav-link navButton text-light fw-bold" href="#">INICIAR SESIÓN</a>
-          </li>
-          <li class="nav-item">
+          </li>`
+          }
+          ${
+            user ? '' :
+            `<li class="nav-item">
             <a class="nav-link navButton text-light fw-bold" href="#">REGISTRARSE</a>
-          </li>
+          </li>`
+          }
+          ${
+            user ? `<li class="nav-item">
+            <a class="nav-link navButton text-light fw-bold" href="#">${user.userName}</a>
+          </li>`
+          : ``
+          }
+          ${
+            user && user.role === ADMIN_ROLE
+            ? `<li class="nav-item">
+            <a class="nav-link navButton text-light fw-bold" href="#">PANEL</a>
+          </li>`
+          : ``
+          }
+          ${
+            user ? `<li class="nav-item">
+            <button class="btn-ligth btn-sm justify-content-center">Cerrar sesión</button>
+          </li>`
+          : ``
+          }
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true"></a>
           </li>
