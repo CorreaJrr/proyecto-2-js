@@ -73,8 +73,8 @@ async function obtenerJuegos(id) {
     alert("hola")
 }
 
-const imageFun = document.querySelectorAll(".imgFuncion");
-console.log(imageFun);
-imageFun.forEach(d => {
-  d.addEventListener('click' , obtenerJuegos())
-});
+// const imageFun = document.querySelectorAll(".imgFuncion");
+// console.log(imageFun);
+// imageFun.forEach(d => {
+//   d.addEventListener('click' , obtenerJuegos())
+// });

@@ -28,13 +28,13 @@ const navBar = () => {
           ${
             user ? '' :
             `<li class="nav-item">
-            <a class="nav-link navButton text-light fw-bold" href="#">INICIAR SESIÓN</a>
+            <a class="nav-link navButton text-light fw-bold" href="login.html">INICIAR SESIÓN</a>
           </li>`
           }
           ${
             user ? '' :
             `<li class="nav-item">
-            <a class="nav-link navButton text-light fw-bold" href="#">REGISTRARSE</a>
+            <a class="nav-link navButton text-light fw-bold" href="registrarse.html">REGISTRARSE</a>
           </li>`
           }
           ${
